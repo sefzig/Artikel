@@ -56,7 +56,7 @@
              
              if (bekannt == false) {
                 
-                                return bot.say(EmpfangsBot+' Solange Andreas noch nicht da ist, geben Sie mir angesagte Stichwörter wie --ConversationalUI, --ConvCom und --KI! ').then(() => 'empfang');                 
+                                return bot.say(EmpfangsBot+' Solange Andreas noch nicht da ist, geben Sie mir angesagte Stichwörter wie --ConversationalUI, --ConvCom oder --KI! ').then(() => 'empfang');                 
              }
              else {
                 
@@ -325,7 +325,7 @@
                 versuche++; 
                 if (versuche == versuche_max)
                 {
-                   bot.say(EmpfangsBot+'Suchen Sie die --Befehle? Oder schalten Sie den --Bot-aus.'); 
+                   bot.say(EmpfangsBot+'Suchen Sie die --Befehle? Oder schalten Sie mich aus, indem Sie --Bots-aus sagen.'); 
                    versuche = 0;
                 }
              }

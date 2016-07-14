@@ -20,7 +20,7 @@
           "client": "artikel", // chatraum, robogeddon, artikel
        // "intro": "an", // an, aus
           "name": "aus", // an, aus
-          "button": "aus", // an, aus
+          "button": "an", // an, aus
           "befehler": "aus" // an, aus
           
        },
@@ -97,7 +97,7 @@
        	 
        // Benutzeroberfläche
           "headerText": "Chatraum des Artikels über Chatbots",
-          "startText": "Dies ist der Anfang Ihres Gesprächs mit Andreas Sefzig.",
+          "startText": "Dies ist der Anfang Ihres Gesprächs mit Andreas Sefzig.<br>&nbsp;",
           "inputPlaceholder": "Schreiben Sie eine Nachricht...",
           "sendButtonText": "Absenden",
           
