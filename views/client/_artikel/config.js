@@ -20,7 +20,7 @@
           "client": "artikel", // chatraum, robogeddon, artikel
        // "intro": "an", // an, aus
           "name": "aus", // an, aus
-          "button": "an", // an, aus
+          "button": "aus", // an, aus
           "befehler": "aus" // an, aus
           
        },
