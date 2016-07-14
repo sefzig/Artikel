@@ -706,12 +706,12 @@
        // Bots anpassen
           var text_merken = text_neu;
           text_neu = inhalt("bot", text_neu, "AndreasSefzig",  "Andreas Sefzig",         zufall, "Sefzig");
-          text_neu = inhalt("bot", text_neu, "SefzigBot",      "Andreas Sefzigs Bot",    zufall, "Sefzig");
+          text_neu = inhalt("bot", text_neu, "EmpfangsBot",    "Andreas Sefzigs Bot",    zufall, "Empfang");
           
        // Chatraum
-          text_neu = inhalt("bot", text_neu, "EmpfangsBot",    "Alice, Empfangs-Bot",    zufall, "Empfang");
-          text_neu = inhalt("bot", text_neu, "VerkaufsBot",    "Barbara, Verkaufs-Bot",  zufall, "Verkauf");
-          text_neu = inhalt("bot", text_neu, "MarketingBot",   "Cynthia, Marketing-Bot", zufall, "Marketing");
+       // text_neu = inhalt("bot", text_neu, "SefzigBot",      "Andreas Sefzigs Bot",    zufall, "Sefzig");
+       // text_neu = inhalt("bot", text_neu, "VerkaufsBot",    "Barbara, Verkaufs-Bot",  zufall, "Verkauf");
+       // text_neu = inhalt("bot", text_neu, "MarketingBot",   "Cynthia, Marketing-Bot", zufall, "Marketing");
           
        // Robogeddon
        // text_neu = inhalt("bot", text_neu, "EmpfangsBot",    "Alice, Empfangs-Bot",    zufall, "Empfang");
