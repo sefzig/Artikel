@@ -15,12 +15,12 @@
        "default": {
           
           "ansicht": "chat", // chat, daten
-          "stil": "tag", // tag, robogeddon, nacht, hx
+          "stil": "robogeddon", // tag, robogeddon, nacht, hx
           "menu": "artikel", // chatraum, robogeddon, artikel
           "client": "artikel", // chatraum, robogeddon, artikel
        // "intro": "an", // an, aus
           "name": "aus", // an, aus
-          "button": "an", // an, aus
+          "button": "aus", // an, aus
           "befehler": "aus" // an, aus
           
        },
