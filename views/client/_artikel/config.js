@@ -7,7 +7,7 @@
           
           "id": "Artikel", // Robogeddon, Sefzigbot, Chatraum, Artikel
           "name": "Artikel",
-          "cdn" : "http://sefzig.net/text/seiten/ArtikelChatbotsCdn/dateien/"
+          "cdn" : "http://sefzig.net/text/seiten/ArtikelCdn/dateien/"
           
        },
        
@@ -38,7 +38,7 @@
     // Smooch-Bot
        "smooch": {
           
-          "appToken": "ai2qsisrse83jpl3k2pvr34tv"
+          "appToken": "b9dk6lfuba1mjmzw5pyhbwuv2"
           
        }
        
