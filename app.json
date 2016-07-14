@@ -1,0 +1,22 @@
+{
+  "name": "artikel",
+  "description": "Der Chatraum zum Chatbots-Artikel",
+  "keywords": ["chatbot", "artikel", "robogeddon"],
+  "website": "http://robogeddon.de/artikel/",
+  "repository": "https://github.com/sefzig/artikel",
+  "logo": "http://robogeddon.de/cdn/robogeddon/logo/700×700.png",
+  "env": {
+    "SMOOCH_APP_TOKEN": {
+      "description": "Your Smooch app token which is used to initialize the web widget.",
+      "required": true
+    },
+    "SMOOCH_KEY_ID": {
+      "description": "Your Smooch key ID, used to talk to the Smooch API",
+      "required": true
+    },
+    "SMOOCH_SECRET": {
+      "description": "Your Smooch secret, used to talk to the Smooch API",
+      "required": true
+    }
+  }
+}

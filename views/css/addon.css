@@ -1,0 +1,42 @@
+    
+    .sk-messages {
+       padding-top: 50px !important;
+    }
+    
+    .sk-intro-section {
+       display: none !important;
+    }
+
+    .sk-intro {
+       position: absolute;
+       top: 0px;
+       left: 0px;
+       padding-left: 10px !important;
+       padding-bottom: 5px !important;
+       font-size: 90%;
+    }
+    
+    .sk-msg {
+       border-top-left-radius: 5px !important;
+       border-top-right-radius: 5px !important;
+       border-bottom-right-radius: 5px !important;
+       border-bottom-left-radius: 5px !important;
+       margin-bottom: 0px !important;
+    }
+    
+    .sk-from {
+       margin-top: 5px !important;
+       padding-left: 0px !important;
+    }
+    
+    .sk-right-row {
+       margin-top: 25px !important;
+       margin-bottom: 0px !important;
+    }
+    
+    #sk-container.sk-embedded #sk-conversation .sk-row .sk-msg-wrapper .sk-action a.btn {
+       border-radius: 5px !important;
+       margin-right: 0px !important;
+       margin-left: 0px !important;
+    }
+    

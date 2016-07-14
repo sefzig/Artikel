@@ -1,0 +1,714 @@
+
+ /* ----------------- */
+ /* Allgemein */ 
+ /* ----------------- */
+    
+ /* Normalisieren */ 
+    html, body, #seite {
+       overflow-x: hidden;
+       overflow-y: hidden;
+    }
+    html, body, #seite, h1, h2, h3, h4, h5, h6 {
+       margin: 0px;
+       padding: 0px;
+       font-family: "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
+       font-size: 14px;
+    }
+    #seite {
+       z-index: 2;
+       overflow-x: hidden;
+       overflow-y: hidden;
+       background-color: white !important;
+    }
+    h1, h2, h3, h4, h5, h6 {
+       margin: 10px;
+    }
+    h1 { font-size: 19px; }
+    h2 { font-size: 18px; }
+    h3 { font-size: 17px; }
+    h4 { font-size: 16px; }
+    h5 { font-size: 15px; }
+    h6 { font-size: 14px; }
+    
+ /* Ios Zoom */
+    select, textarea, 
+    input[type="text"], 
+    input[type="password"], 
+    input[type="datetime"], 
+    input[type="datetime-local"], 
+    input[type="date"], 
+    input[type="month"], 
+    input[type="time"], 
+    input[type="week"], 
+    input[type="number"], 
+    input[type="email"], 
+    input[type="url"], 
+    input[type="search"], 
+    input[type="tel"], 
+    input[type="color"] { 
+       font-size: 16px;
+    }
+    
+ /* ----------------- */
+ /* Seite */
+ /* ----------------- */
+    
+ /* Anzeige */
+    #seite > #daten, 
+    #seite > #chat {
+       display: none;
+    }
+ /* Dimensionen */
+    #seite > #daten, 
+    #seite > #chat, 
+    #seite > #menu, 
+    #seite > #fenster {
+       position: absolute;
+       top: 0px;
+       bottom: 0px;
+    }
+    #seite > #daten,
+    #seite > #chat,
+    #seite > #fenster {
+       left: 0px;
+       right: 0px;
+    }
+    #seite > #menu > div > div {
+       margin: 15px;
+       margin-bottom: 15px;
+    }
+    #seite > #menu,
+    #seite > #menu > div {
+       overflow: auto;
+    }
+    
+    #seite > #menu > div {
+       position: absolute;
+       top: 0px;
+       left: 0px; 
+       right: 0px; 
+       bottom: 0px;
+       width: 100%;
+       max-width: 250px;
+    }
+    #seite > #daten {
+       z-index: 101;
+    }
+    #seite > #chat {
+       z-index: 102;
+       top: -12px; /* :/ */
+    }
+    #seite > #menu {
+       z-index: 103;
+       right: -42%;
+       bottom: 56px;
+       width: 42%;
+    }
+    body:not([data-mobil=""]) #seite > #menu {
+       right: -84%;
+       width: 84%;
+    }
+    
+ /* Burger-Menü */
+    #seite > #start {
+       display: none;
+       z-index: 104;
+       position: absolute; 
+       top: 10px; 
+       right: 10px; 
+       left: none; 
+       bottom: none;
+    }
+    #seite > #start > input {
+       width: 25px; 
+       height: 25px; 
+       cursor: pointer;
+       border: 0px;
+    }
+    
+ /* ----------------- */
+ /* Seiten            */
+ /* ----------------- */
+    
+ /* Daten */
+    #seite > #daten {
+       background: white;
+    }
+    #seite > #daten > div {
+       margin: 0px;
+       padding: 0px;
+       padding-left: 15px;
+       padding-right: 15px;
+    }
+    #seite > #daten > div h2,
+    #seite > #daten > div p {
+       margin: 0px;
+       margin-top: 15px;
+       margin-bottom: 15px;
+       padding: 0px;
+    }
+    #seite > #daten > div h2 {
+       
+    }
+    #seite > #daten > div div {
+       position: relative;
+       margin-left: auto;
+       margin-right: auto;
+       padding: 15px;
+       background: transparent;
+       text-align: center;
+    }
+    #seite > #daten > div div img {
+       max-width: 100%;
+    }
+    @media (min-height:    1px) { #seite > #daten > div div img { max-height:  100px; animation-name: hohe1;  animation-duration: 1s; animation-iteration-count: 1; }} @keyframes hohe1  { to { max-height: 200px; } }
+    @media (min-height:  200px) { #seite > #daten > div div img { max-height:  100px; animation-name: hohe2;  animation-duration: 1s; animation-iteration-count: 1; }} @keyframes hohe2  { to { max-height: 250px; } }
+    @media (min-height:  250px) { #seite > #daten > div div img { max-height:  150px; animation-name: hohe2;  animation-duration: 1s; animation-iteration-count: 1; }} @keyframes hohe2  { to { max-height: 250px; } }
+    @media (min-height:  300px) { #seite > #daten > div div img { max-height:  200px; animation-name: hohe2;  animation-duration: 1s; animation-iteration-count: 1; }} @keyframes hohe2  { to { max-height: 250px; } }
+    @media (min-height:  350px) { #seite > #daten > div div img { max-height:  250px; animation-name: hohe2;  animation-duration: 1s; animation-iteration-count: 1; }} @keyframes hohe2  { to { max-height: 250px; } }
+    @media (min-height:  400px) { #seite > #daten > div div img { max-height:  300px; animation-name: hohe3;  animation-duration: 1s; animation-iteration-count: 1; }} @keyframes hohe3  { to { max-height: 300px; } }
+    @media (min-height:  450px) { #seite > #daten > div div img { max-height:  350px; animation-name: hohe4;  animation-duration: 1s; animation-iteration-count: 1; }} @keyframes hohe4  { to { max-height: 350px; } }
+    @media (min-height:  500px) { #seite > #daten > div div img { max-height:  400px; animation-name: hohe5;  animation-duration: 1s; animation-iteration-count: 1; }} @keyframes hohe5  { to { max-height: 400px; } }
+    @media (min-height:  550px) { #seite > #daten > div div img { max-height:  460px; animation-name: hohe6;  animation-duration: 1s; animation-iteration-count: 1; }} @keyframes hohe6  { to { max-height: 460px; } }
+    @media (min-height:  601px) { #seite > #daten > div div img { max-height:  410px; animation-name: hohe7;  animation-duration: 1s; animation-iteration-count: 1; }} @keyframes hohe7  { to { max-height: 410px; } }
+    @media (min-height:  660px) { #seite > #daten > div div img { max-height:  460px; animation-name: hohe8;  animation-duration: 1s; animation-iteration-count: 1; }} @keyframes hohe8  { to { max-height: 470px; } }
+    @media (min-height:  700px) { #seite > #daten > div div img { max-height:  510px; animation-name: hohe9;  animation-duration: 1s; animation-iteration-count: 1; }} @keyframes hohe9  { to { max-height: 510px; } }
+    @media (min-height:  725px) { #seite > #daten > div div img { max-height:  535px; animation-name: hohe10; animation-duration: 1s; animation-iteration-count: 1; }} @keyframes hohe10 { to { max-height: 540px; } }
+    @media (min-height:  750px) { #seite > #daten > div div img { max-height:  560px; animation-name: hohe11; animation-duration: 1s; animation-iteration-count: 1; }} @keyframes hohe11 { to { max-height: 570px; } }
+    
+    #seite > #daten > div div div {
+       position: absolute;
+       top: 0px;
+       left: 0px;
+       bottom: 0px;
+       right: 0px;
+       background: transparent;
+    }
+    #seite > #daten > div div div table {
+       background: transparent;
+    }
+    #seite > #daten > div div div table,
+    #seite > #daten > div div div tr,
+    #seite > #daten > div div div td {
+       padding: 0px;
+       text-align: center;
+       vertical-align: middle;
+    }
+    #seite > #daten > div div div table {
+       width: 100%;
+       height: 100%;
+    }
+    #seite > #daten > div div input {
+       text-align: center;
+    }
+    #seite > #daten > div div input[type="submit"] {
+       cursor: pointer;
+    }
+    
+ /* Chat */
+    #seite > #chat {
+       background: white;
+    }
+    
+ /* ----------------- */
+ /* Menü              */
+ /* ----------------- */
+    
+ /* Menü (Default) */
+    #menu > div {
+       display: none;
+       line-height: 20px;
+    }
+    #menu h2 {
+       margin: 14px;
+    }
+    #menu h3 {
+       margin: 0px;
+       margin-bottom: 10px;
+    }
+    
+    body:not([data-mobil=""]) #menu,  body:not([data-mobil=""]) #menu  *  { font-size: 14px !important; }
+    body:not([data-mobil=""]) #daten, body:not([data-mobil=""]) #daten *  { font-size: 14px !important; }
+    body:not([data-mobil=""]) #menu  h2 { font-size: 18px !important; }
+    body:not([data-mobil=""]) #menu  h3 { font-size: 16px !important; }
+    body:not([data-mobil=""]) #daten h2 { font-size: 18px !important; }
+    body:not([data-mobil=""]) #daten h3 { font-size: 16px !important; }
+    
+    @media (min-width:   1px) { #menu, #menu button, #menu input, #daten input, #daten span { font-size:  8px !important; } #menu h2, #daten h2 { font-size: 12px; } #menu h3, #daten h3 { font-size: 10px !important; } }
+    @media (min-width: 400px) { #menu, #menu button, #menu input, #daten input, #daten span { font-size:  9px !important; } #menu h2, #daten h2 { font-size: 13px; } #menu h3, #daten h3 { font-size: 11px !important; } }
+    @media (min-width: 430px) { #menu, #menu button, #menu input, #daten input, #daten span { font-size: 10px !important; } #menu h2, #daten h2 { font-size: 14px; } #menu h3, #daten h3 { font-size: 12px !important; } }
+    @media (min-width: 460px) { #menu, #menu button, #menu input, #daten input, #daten span { font-size: 11px !important; } #menu h2, #daten h2 { font-size: 15px; } #menu h3, #daten h3 { font-size: 13px !important; } }
+    @media (min-width: 500px) { #menu, #menu button, #menu input, #daten input, #daten span { font-size: 12px !important; } #menu h2, #daten h2 { font-size: 16px; } #menu h3, #daten h3 { font-size: 14px !important; } }
+    @media (min-width: 550px) { #menu, #menu button, #menu input, #daten input, #daten span { font-size: 13px !important; } #menu h2, #daten h2 { font-size: 17px; } #menu h3, #daten h3 { font-size: 15px !important; } }
+    
+    #menu div > div button,
+    #menu div > div a { 
+       margin-top: 1px;
+       margin-left: 1px;
+       margin-right: 1px;
+       margin-bottom: 1px;
+       padding-left: 3px;
+       padding-right: 4px;
+       display: inline-block;
+       border: 0px;
+       border-radius: 2px;
+       background-color: #00aeff;
+       color: white;
+       cursor: pointer;
+    }
+    #menu div > div button:focus,
+    #menu div > div a:focus { 
+       background-color: #00ff00;
+       color: black;
+    }
+    #menu div > div button.aktiv
+    #menu div > div a.aktiv { 
+       background-color: #ffffff;
+       color: black;
+    }
+    
+    #menu #formular li {
+       margin: 0px;
+       width: 100%;
+    }
+    #menu #formular input {
+       display: inline-block;
+       margin: 0px;
+       margin-top: 1px;
+       margin-left: 0px;
+       margin-bottom: 1px;
+       padding: 2px;
+       padding-left: 5px;
+       padding-right: 4px;
+       background-color: #ff00ff;
+       border: 0px white solid;
+       border-radius: 2px;
+       color: white;
+       font-size: 14px;
+    }
+    #menu #formular input:focus {
+       background-color: #ffffff;
+       color: black;
+    }
+    #menu #formular input[type="submit"] {
+       display: none;
+    }
+    
+ /* ----------------- */
+ /* Web Widget        */
+ /* ----------------- */
+    
+ /* Dimensionen */
+    #sk-wrapper, #sk-header, #sk-conversation, #sk-footer {
+       position: absolute !important;
+       z-index: 1000;
+       right: 0px;
+       left: 0px;
+    }
+    #sk-wrapper {
+       top: 0px;
+       bottom: 0px;
+    }
+    #sk-header {
+       display: none;
+       top: 0px;
+       height: 45px;
+    }
+    #sk-conversation {
+       top: 12px !important;
+       bottom: 0px !important;
+       height: calc(100% - 68px) !important;
+    }
+    #sk-footer {
+       bottom: 0px;
+       padding-top: 3px !important;
+       padding-bottom: 7px !important;
+       width: 100%;
+       height: 55px !important;
+       right: -1px;
+    }
+    .sk-messages {
+       padding-bottom: 0px !important;
+    }
+    .sk-intro {
+       padding-top: 10px !important;
+    }
+    #sk-footer .input-container {
+       background-color: transparent !important;
+    }
+    #sk-footer .message-input {
+       background-color: white !important;
+    }
+    
+ /* Logo-Einbindung */
+    .sk-messages-container .sk-logo {
+       text-align: center;
+       margin-left: 0px !important;
+       width: 84%;
+    }
+    
+ /* Farben */
+    #sk-container.sk-embedded #sk-wrapper {
+       background-color: white;
+    }
+    #sk-conversation::-webkit-scrollbar,
+    #sk-conversation::-webkit-scrollbar-track {
+       box-shadow: none;
+       background-color: white;
+    }
+    #sk-conversation::-webkit-scrollbar-thumb {
+       border-radius: 10px;
+       box-shadow: none;
+       background-color: #eeeeee;
+    }
+    
+ /* ----------------- */
+ /* Kopfzeile */
+ /* ----------------- */
+ /*
+    #sk-header > span:before {
+       content: ".!,,!";
+       display: inline;
+       background: url("http://sefzig.net/text/seiten/ArtikelCdn/dateien/Displaybild_SefzigBot.png") no-repeat;
+       width: 20px;
+       height: 20px;
+       margin: 0 6px 0 0;
+    }
+  */
+ /* ----------------- */
+ /* Nachrichten */
+ /* ----------------- */
+    
+ /* Dimensionen */
+    body:not([data-mobil=""]) .sk-msg { 
+       max-width: 222px !important;
+    }
+    .sk-msg { 
+       max-width: 250px !important;
+    }
+    .sk-messages img.bild { 
+       max-width: 225px !important;
+       cursor: pointer;
+    }
+    
+ /* Bots */
+    .sk-from {
+       display: block;
+    }
+    #sk-conversation .sk-row.sk-left-row .sk-msg-avatar {
+       border-radius: 5px;
+    }
+    #sk-conversation .sk-row.sk-left-row .roboter {
+       cursor: pointer;
+    }
+ /* Farben */
+    .sk-left-row .sk-msg {
+       background-color: #dddddd !important;
+    }
+    .sk-left-row .sk-msg
+    .sk-right-row .sk-msg {
+       max-width: 230px !important;
+    }
+    #sk-conversation .sk-row.sk-left-row .sk-msg-image:after, 
+    #sk-conversation .sk-row.sk-left-row .sk-msg:after {
+       border-color: transparent !important;
+       border-right-color: #dddddd !important;
+    }
+    .sk-msg.frei::after {
+       border: none !important;
+    }
+    
+ /* ----------------- */
+ /* Module */
+ /* ----------------- */
+    
+ /* Befehl */
+    .sk-msg span.befehl { 
+       margin-top: 1px;
+       margin-bottom: 1px;
+       padding-left: 3px;
+       padding-right: 3px;
+       display: inline-block;
+       border-radius: 2px;
+       cursor: pointer;
+    }
+    
+ /* Button */
+    .sk-msg .modulButton { 
+       display: inline-block;
+       width: 100%;
+    }
+    .sk-msg .modulButton > a { 
+       margin-top: 5px !important;
+       margin-bottom: 3px !important;
+       color: black !important;
+       background-color: silver !important;
+       border-color: silver !important;
+    }
+    
+ /* Textlink */
+    .sk-msg a.textLink { 
+       color: #00aeff;
+    }
+    
+ /* Bilder */
+    .sk-msg img.bild {
+       width: 225px;
+       margin-top: 10px;
+       margin-bottom: 5px;
+    }
+    
+ /* ----------------- */
+ /* Fusszeile */
+ /* ----------------- */
+    
+    #sk-footer {
+       background-color: #dddddd;
+       color: gray !important;
+    }
+    #sk-footer .message-input {
+       background-color: #dddddd;
+       color: black !important;
+    }
+    #sk-footer .send.active {
+       color: black !important;
+    }
+    
+ /* ----------------- */
+ /* Schaufenster */
+ /* ----------------- */
+    
+ /* Dimensionen */
+    #fenster { 
+       display: none;
+       position: fixed;
+       z-index: 3000;
+       top: 0px;
+       bottom: 0px;
+       padding: 10px;
+       padding-bottom: 33px;
+       background-color:rgba(0,0,0,0.5);
+    }
+    #fenster iframe { 
+       width: 100%;
+       height: 100%;
+       border: 0px black solid;
+    }
+    #fenster img { 
+       max-width: 100%;
+       max-height: 100%;
+       border: 0px black solid;
+       cursor: pointer;
+    }
+    #fenster div { 
+    }
+    #fenster div img { 
+       width: 30px;
+       height: 30px;
+       max-width: 30px;
+       max-height: 30px;
+       max-width: 30px;
+       max-height: 30px;
+       margin-right: -3px;
+       cursor: pointer;
+    }
+    
+ /* ----------------- */
+ /* Js Klassen */
+ /* ----------------- */
+    
+ /* Anzeigen/verbergen */
+    .anzeigenB { display: block; }
+    .anzeigenI { display: inline; }
+    .verbergen { display: none; }
+    
+ /* ----------------- */
+ /* Umgebung */
+ /* ----------------- */
+    
+    @media (min-width:   1px) { body[data-menu="aus"][data-mobil=""] .sk-msg { max-width: 150px !important; transition: all 0.3s linear; font-size: 11px !important; } }
+    @media (min-width: 410px) { body[data-menu="aus"][data-mobil=""] .sk-msg { max-width: 170px !important; transition: all 0.3s linear; font-size: 12px !important; } }
+    @media (min-width: 440px) { body[data-menu="aus"][data-mobil=""] .sk-msg { max-width: 190px !important; transition: all 0.3s linear; font-size: 12px !important; } }
+    @media (min-width: 470px) { body[data-menu="aus"][data-mobil=""] .sk-msg { max-width: 210px !important; transition: all 0.3s linear; font-size: 13px !important; } }
+    @media (min-width: 510px) { body[data-menu="aus"][data-mobil=""] .sk-msg { max-width: 230px !important; transition: all 0.3s linear; font-size: 13px !important; } }
+    @media (min-width: 560px) { body[data-menu="aus"][data-mobil=""] .sk-msg { max-width: 250px !important; transition: all 0.3s linear; font-size: 14px !important; } }
+    @media (min-width: 610px) { body[data-menu="aus"][data-mobil=""] .sk-msg { max-width: 250px !important; transition: all 0.3s linear; font-size: 14px !important; } }
+    
+    body[data-menu="an"]                             .sk-right-row .sk-msg { margin-right: 0%;  transition: all 0.3s linear; }
+ /* body[data-mobil="iphone"][data-menu="aus"]       .sk-right-row .sk-msg { margin-right: 84%; transition: all 0.3s linear; } */
+    body[data-menu="aus"][data-mobil=""] .sk-right-row .sk-msg { margin-right: 42%; transition: all 0.3s linear; }
+    
+    @-moz-document url-prefix() {
+    body[data-menu="aus"][data-mobil=""] .sk-right-row .sk-msg { margin-right: 44%; transition: all 0.3s linear; }
+    }
+    
+ /* ----------------- */
+ /* Befehler */
+ /* ----------------- */
+    
+    .befehle {
+       display: none;
+       position: absolute; 
+       z-index: 10001 !important;
+       bottom: 17px; 
+       left: 34px; 
+       right: 117px; 
+       height: 27px;
+       padding: 5px;
+       padding-top: 0px;
+       overflow-y: hidden;
+       overflow-x: hidden;
+       white-space: nowrap;
+    }
+    .befehle > div {
+       width: 1000px;
+       background-color: transparent;
+       overflow-y: hidden;
+       overflow-x: auto;
+    }
+    .befehle > div > .befehler {
+       position: relative;
+       float: left;
+       margin: 2px;
+       margin-left: 0px;
+       margin-right: 4px;
+       margin-bottom: 2px;
+       padding-top: 3px;
+       padding-right: 5px;
+       padding-bottom: 2px;
+       padding-left: 5px;
+       background-color: red;
+       color: #ffffff;
+       border-radius: 2px;
+       cursor: pointer;
+    }
+    .befehle > div > .befehler > span {
+       margin-left: 1px;
+    }
+    
+    #befehlleiste {
+       display: none;
+       position: absolute;
+       z-index: 3002;
+       top: 15px;
+       right: 90px;
+       border: 0px black solid;
+    }
+    #befehlleiste input {
+       width: 20px;
+       height: 20px;
+       background-color: #dddddd;
+       border-radius: 10px;
+       color: white;
+       border: 0px black solid;
+       cursor: pointer;
+       font-style: italic;
+      -webkit-transition: background-color 500ms linear;
+      -moz-transition: background-color 500ms linear;
+      -o-transition: background-color 500ms linear;
+      -ms-transition: background-color 500ms linear;
+       transition: background-color 500ms linear;
+    }
+    #befehlleiste input.aktiv {
+       background-color: #00aeff;
+      -webkit-transition: background-color 500ms linear;
+      -moz-transition: background-color 500ms linear;
+      -o-transition: background-color 500ms linear;
+      -ms-transition: background-color 500ms linear;
+       transition: background-color 500ms linear;
+    }
+    
+ /* ----------------- */
+ /* Whitelabel */
+ /* ----------------- */
+    
+    #sk-container.sk-embedded #sk-conversation .sk-row.sk-left-row .sk-msg-wrapper .sk-msg {
+      color: white;
+    }
+    
+ /* ----------------- */
+ /* Grosse Bildschirme */
+ /* ----------------- */
+    
+    #seite {
+       max-width: 600px !important;
+       margin-left: auto !important;
+       margin-right: auto !important;
+    }
+    
+    @media (min-width: 601px) { #seite {
+       position: absolute;
+       top: 0px;
+       right: 0px;
+       bottom: 0px;
+       left: 0px;
+    }}
+    
+    @media (min-width:   1px) { @media (min-height: 601px) { #seite {
+       top: 0px;
+       bottom: 0px;
+    }}}
+    
+    @media (min-width: 601px) { @media (min-height: 601px) { #seite {
+       top: 50px;
+       bottom: 50px;
+    }}}
+    
+    @media (min-height:   0px) { #seite {
+       animation-name: anwendung;
+       animation-duration: 1s;
+       animation-iteration-count: 1;
+       border-top-color: transparent;
+       border-bottom-color: transparent;
+    }}
+    
+    @media (min-height:   0px) { @media (min-height: 601px) { #seite {
+       animation-name: anwendung;
+       animation-duration: 1s;
+       animation-iteration-count: 1;
+    }}}
+    
+    @media (min-height: 601px) { #seite {
+       animation-name: szene;
+       animation-duration: 1s;
+       animation-iteration-count: 1;
+    }}
+    
+    @keyframes szene {
+       from { top:  0px; bottom:  0px; }
+       to   { top: 50px; bottom: 50px; }
+    }
+
+    @keyframes anwendung {
+       from { top: 50px; bottom: 50px; }
+       to   { top:  0px; bottom:  0px; }
+    }
+
+    @media (min-width: 601px) { body > #hintergrund {
+       position: fixed;
+       z-index: 1;
+       top: -50%; 
+       left: -50%; 
+       width: 200%; 
+       height: 200%;
+    }}
+    
+    @media (min-width: 601px) { body > #hintergrund img {
+       position: absolute; 
+       top: 0; 
+       left: 0; 
+       right: 0; 
+       bottom: 0; 
+       margin: auto; 
+       min-width: 50%;
+       min-height: 50%;
+    }}
+    
+    #datenFormular {
+    	position: absolute;
+    	right: 0px;
+    	bottom: 20px;
+    	left: 0px;
+    	height: 100px;
+    	text-align: center;
+    }

@@ -1,0 +1,22 @@
+
+        <div id="datenFormular">
+          <span id="namenEingeben"></span><br /><br />
+          <input type="text" class="vorname"  id="vornameDaten"  value="" onchange="$('#vornameMenu' ).attr('value', $(this).val());" style="width:  84px; margin-bottom: 5px;" /><script> wachsen("vornameDaten",   84); $("#vornameDaten" ).trigger("change"); </script><br />
+          <input type="text" class="nachname" id="nachnameDaten" value="" onchange="$('#nachnameMenu').attr('value', $(this).val());" style="width:  96px; margin-bottom: 5px;" /><script> wachsen("nachnameDaten",  96); $("#nachnameDaten").trigger("change"); </script>
+        </div>
+        <div class="artikel">
+          <h2>Artikel</h2>
+          <div data-start="chat">
+            <img src="Intro_Hintergrund_1200x1200.png" rel="cdn" alt="Gespräch beginnen" />
+            <div>
+              <table data-start="chat">
+                <tr><td data-start="chat" style="cursor: pointer; height: 100px;">&nbsp;</td></tr>
+                <tr><td data-start="chat" style="cursor: pointer;">
+                  <input type="submit" value="Gespräch beginnen" /><br />
+                </td></tr>
+                <tr><td style="height: 100px;">
+                </td></tr>
+              </table>
+            </div>
+          </div>
+        </div>

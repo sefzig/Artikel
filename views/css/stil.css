@@ -1,0 +1,193 @@
+    
+ /* ------------------- */
+ /* Inszenierung */
+ /* ------------------- */
+    
+ /* Hintergrund */
+    body[data-stil="tag"]        { background-color: #cccccc; } body[data-mobil=""][data-stil="tag"]        #seite { border: #333333  3px solid; } 
+    body[data-stil="robogeddon"] { background-color: #cccccc; } body[data-mobil=""][data-stil="robogeddon"] #seite { border: #000000 10px solid; border-radius: 8px; } 
+    body[data-stil="talente"]    { background-color: #f7f7f7; } body[data-mobil=""][data-stil="talente"]    #seite { border: #000000  5px solid; border-radius: 0px; } 
+    body[data-stil="nacht"]      { background-color: #333333; } body[data-mobil=""][data-stil="nacht"]      #seite { border: #000000  5px solid; } 
+    body[data-stil="hacks"]      { background-color:   black; } body[data-mobil=""][data-stil="hacks"]      #seite { border: #ffffff  1px solid; } 
+    
+ /* ------------------- */
+ /* Menü */
+ /* ------------------- */
+
+ /* Hintergrundfarbe und Schriftfarbe */
+    body[data-stil="tag"]        #menu { background: #cccccc; color: #333333; }
+    body[data-stil="robogeddon"] #menu { background:   black; color:   white; }
+    body[data-stil="talente"]    #menu { background: #0071ba; color:   white; }
+    body[data-stil="nacht"]      #menu { background: #333333; color:   white; }
+    body[data-stil="hacks"]      #menu { background:   black; color:   white; }
+    
+ /* Überschriften: Schrift */
+    body[data-stil="tag"]        #menu h2, #menu h3, #menu h4, #menu h5, #menu h6 { font-weight: 900; }
+    body[data-stil="robogeddon"] #menu h2, #menu h3, #menu h4, #menu h5, #menu h6 { font-weight: 900; }
+    body[data-stil="talente"]    #menu h2, #menu h3, #menu h4, #menu h5, #menu h6 { font-weight: 900; }
+    body[data-stil="nacht"]      #menu h2, #menu h3, #menu h4, #menu h5, #menu h6 { font-weight: 900; }
+    body[data-stil="hacks"]      #menu h2, #menu h3, #menu h4, #menu h5, #menu h6 { font-weight: 900; }
+    
+ /* Button-Farben */
+    body[data-stil="tag"]        #menu div > div button { background-color: #00aeff; color:   white; }
+    body[data-stil="robogeddon"] #menu div > div button { background-color: #00aeff; color:   white; }
+    body[data-stil="talente"]    #menu div > div button { background-color: #cccccc; color:   black; }
+    body[data-stil="nacht"]      #menu div > div button { background-color: #00aeff; color:   black; }
+    body[data-stil="hacks"]      #menu div > div button { background-color: #00ff00; color:   black; }
+    
+ /* Button-Farben: aktiv */
+    body[data-stil="tag"]        #menu div > div button.aktiv { background-color:   white !important; color:   black !important; }
+    body[data-stil="robogeddon"] #menu div > div button.aktiv { background-color:   white !important; color:   black !important; }
+    body[data-stil="talente"]    #menu div > div button.aktiv { background-color:   black !important; color:   white !important; }
+    body[data-stil="nacht"]      #menu div > div button.aktiv { background-color:   white !important; color:   black !important; }
+    body[data-stil="hacks"]      #menu div > div button.aktiv { background-color: #ff00ff !important; color:   black !important; }
+    
+ /* Input-Farben */
+    body[data-stil="tag"]        #menu #formular input { background-color: #ff00ff; color:   white; }
+    body[data-stil="robogeddon"] #menu #formular input { background-color: #ff00ff; color:   white; }
+    body[data-stil="talente"]    #menu #formular input { background-color: #999999; color:   white; }
+    body[data-stil="nacht"]      #menu #formular input { background-color: #ff00ff; color:   black; }
+    body[data-stil="hacks"]      #menu #formular input { background-color:    gray; color:   black; }
+    
+ /* ------------------- */
+ /* Konversation */
+ /* ------------------- */
+    
+ /* Hintergrundfarbe und Schriftfarbe */
+    body[data-stil="tag"]        #sk-container.sk-embedded #sk-wrapper { background-color: #eeeeee; }
+    body[data-stil="robogeddon"] #sk-container.sk-embedded #sk-wrapper { background-color:   white; }
+    body[data-stil="talente"]    #sk-container.sk-embedded #sk-wrapper { background-color: #f7f7f7; }
+    body[data-stil="nacht"]      #sk-container.sk-embedded #sk-wrapper { background-color: #666666; }
+    body[data-stil="hacks"]      #sk-container.sk-embedded #sk-wrapper { background-color:   black; }
+    
+ /* Scrollbar: Fläche */
+    body[data-stil="tag"]        #sk-conversation::-webkit-scrollbar, body[data-stil="tag"]        #sk-conversation::-webkit-scrollbar-track { background-color: #eeeeee !important; }
+    body[data-stil="robogeddon"] #sk-conversation::-webkit-scrollbar, body[data-stil="robogeddon"] #sk-conversation::-webkit-scrollbar-track { background-color: #ffffff !important; }
+    body[data-stil="talente"]    #sk-conversation::-webkit-scrollbar, body[data-stil="talente"]    #sk-conversation::-webkit-scrollbar-track { background-color: #f7f7f7 !important; }
+    body[data-stil="nacht"]      #sk-conversation::-webkit-scrollbar, body[data-stil="nacht"]      #sk-conversation::-webkit-scrollbar-track { background-color: #666666 !important; box-shadow: none !important; }
+    body[data-stil="hacks"]      #sk-conversation::-webkit-scrollbar, body[data-stil="hacks"]      #sk-conversation::-webkit-scrollbar-track { background-color: #333333 !important; box-shadow: none !important; }
+    
+ /* Scrollbar: Griff */
+    body[data-stil="tag"]        #sk-conversation::-webkit-scrollbar-thumb { background-color: #ffffff !important; }
+    body[data-stil="robogeddon"] #sk-conversation::-webkit-scrollbar-thumb { background-color: #eeeeee !important; }
+    body[data-stil="talente"]    #sk-conversation::-webkit-scrollbar-thumb { background-color: #cccccc !important; }
+    body[data-stil="nacht"]      #sk-conversation::-webkit-scrollbar-thumb { background-color: #555555 !important; box-shadow: none !important; }
+    body[data-stil="hacks"]      #sk-conversation::-webkit-scrollbar-thumb { background-color: #000000 !important; box-shadow: none !important; }
+    
+ /* Nachricht: From */
+    body[data-stil="tag"]        #sk-conversation .sk-from { color: #999999 !important; }
+    body[data-stil="robogeddon"] #sk-conversation .sk-from { color: #666666 !important; }
+    body[data-stil="talente"]    #sk-conversation .sk-from { color: #666666 !important; }
+    body[data-stil="nacht"]      #sk-conversation .sk-from { color: #bbbbbb !important; }
+    body[data-stil="hacks"]      #sk-conversation .sk-from { color:  silver !important; }
+    
+ /* Intro */
+    body[data-stil="tag"]        .sk-intro { color: #999999 !important; }
+    body[data-stil="robogeddon"] .sk-intro { color: #666666 !important; }
+    body[data-stil="talente"]    .sk-intro { color: #666666 !important; }
+    body[data-stil="nacht"]      .sk-intro { color: #bbbbbb !important; }
+    body[data-stil="hacks"]      .sk-intro { color:  silver !important; }
+    
+ /* Nachricht: Textlink */
+    body[data-stil="tag"]        #sk-conversation a.textLink, #sk-conversation a.textLink:visited, #sk-conversation a.textLink:hover { color: #00aeff !important; }
+    body[data-stil="robogeddon"] #sk-conversation a.textLink, #sk-conversation a.textLink:visited, #sk-conversation a.textLink:hover { color: #00aeff !important; }
+    body[data-stil="talente"]    #sk-conversation a.textLink, #sk-conversation a.textLink:visited, #sk-conversation a.textLink:hover { color: #0071ba !important; }
+    body[data-stil="nacht"]      #sk-conversation a.textLink, #sk-conversation a.textLink:visited, #sk-conversation a.textLink:hover { color: #00aeff !important; }
+    body[data-stil="hacks"]      #sk-conversation a.textLink, #sk-conversation a.textLink:visited, #sk-conversation a.textLink:hover { color: #00ff00 !important; }
+    
+ /* ------------------- */
+ /* Nachrichten links */
+ /* ------------------- */
+    
+ /* Hintergrundfarbe und Schriftfarbe */
+    body[data-stil="tag"]        #sk-conversation .sk-left-row .sk-msg { background-color: #cccccc !important; color: #333333 !important; }
+    body[data-stil="robogeddon"] #sk-conversation .sk-left-row .sk-msg { background-color: #dddddd !important; color: #000000 !important; }
+    body[data-stil="talente"]    #sk-conversation .sk-left-row .sk-msg { background-color: #ffffff !important; color: #333333 !important; }
+    body[data-stil="nacht"]      #sk-conversation .sk-left-row .sk-msg { background-color: #333333 !important; color: #ffffff !important; }
+    body[data-stil="hacks"]      #sk-conversation .sk-left-row .sk-msg { background-color: #222222 !important; color: #ffffff !important; }
+    
+ /* Pfeilfarbe */
+    body[data-stil="tag"]        #sk-conversation .sk-left-row .sk-msg:after { border-right-color: #cccccc !important; }
+    body[data-stil="robogeddon"] #sk-conversation .sk-left-row .sk-msg:after { border-right-color: #dddddd !important; }
+    body[data-stil="talente"]    #sk-conversation .sk-left-row .sk-msg:after { border-right-color: #ffffff !important; }
+    body[data-stil="nacht"]      #sk-conversation .sk-left-row .sk-msg:after { border-right-color: #333333 !important; }
+    body[data-stil="hacks"]      #sk-conversation .sk-left-row .sk-msg:after { border-right-color: #111111 !important; }
+    
+ /* Button-Farben */
+    body[data-stil="tag"]        #sk-conversation .sk-left-row .sk-msg span.befehl { background-color: #00aeff; color: white; }
+    body[data-stil="robogeddon"] #sk-conversation .sk-left-row .sk-msg span.befehl { background-color: #00aeff; color: white; }
+    body[data-stil="talente"]    #sk-conversation .sk-left-row .sk-msg span.befehl { background-color: #cccccc; color: black; }
+    body[data-stil="nacht"]      #sk-conversation .sk-left-row .sk-msg span.befehl { background-color: #00aeff; color: black; }
+    body[data-stil="hacks"]      #sk-conversation .sk-left-row .sk-msg span.befehl { background-color: #00ff00; color: black; }
+    
+ /* ------------------- */
+ /* Nachrichten rechts */
+ /* ------------------- */
+    
+ /* Hintergrundfarbe und Schriftfarbe */
+    body[data-stil="tag"]        #sk-conversation .sk-right-row .sk-msg { background-color: #00aeff !important; color: white !important; }
+    body[data-stil="robogeddon"] #sk-conversation .sk-right-row .sk-msg { background-color: #00aeff !important; color: white !important; }
+    body[data-stil="talente"]    #sk-conversation .sk-right-row .sk-msg { background-color: #cccccc !important; color: black !important; }
+    body[data-stil="nacht"]      #sk-conversation .sk-right-row .sk-msg { background-color: #00aeff !important; color: black !important; }
+    body[data-stil="hacks"]      #sk-conversation .sk-right-row .sk-msg { background-color: #00ff00 !important; color: black !important; }
+    
+ /* Pfeilfarbe */
+    body[data-stil="tag"]        #sk-conversation .sk-right-row .sk-msg:after { border-left-color: #00aeff !important; }
+    body[data-stil="robogeddon"] #sk-conversation .sk-right-row .sk-msg:after { border-left-color: #00aeff !important; }
+    body[data-stil="talente"]    #sk-conversation .sk-right-row .sk-msg:after { border-left-color: #cccccc !important; }
+    body[data-stil="nacht"]      #sk-conversation .sk-right-row .sk-msg:after { border-left-color: #00aeff !important; }
+    body[data-stil="hacks"]      #sk-conversation .sk-right-row .sk-msg:after { border-left-color: #00ff00 !important; }
+    
+ /* Button-Farben */
+    body[data-stil="tag"]        #sk-conversation .sk-right-row .sk-msg span.befehl { background-color: #00aeff; color:   white; }
+    body[data-stil="robogeddon"] #sk-conversation .sk-right-row .sk-msg span.befehl { background-color: #00aeff; color:   white; }
+    body[data-stil="talente"]    #sk-conversation .sk-right-row .sk-msg span.befehl { background-color: #cccccc; color:   black; }
+    body[data-stil="nacht"]      #sk-conversation .sk-right-row .sk-msg span.befehl { background-color: #00aeff; color:   black; }
+    body[data-stil="hacks"]      #sk-conversation .sk-right-row .sk-msg span.befehl { background-color: #00ff00; color:   black; }
+    
+ /* ------------------- */
+ /* Footer */
+ /* ------------------- */
+    
+ /* Rahmenfarbe oben */
+    body[data-stil="tag"]        #sk-footer { border-top: #333333 0px solid !important; }
+    body[data-stil="robogeddon"] #sk-footer { border-top: #333333 0px solid !important; }
+    body[data-stil="talente"]    #sk-footer { border-top: #333333 0px solid !important; }
+    body[data-stil="nacht"]      #sk-footer { border-top: #333333 0px solid !important; }
+    body[data-stil="hacks"]      #sk-footer { border-top: #333333 1px solid !important; }
+    
+ /* Hintergrundfarbe und Schriftfarbe */
+    body[data-stil="tag"]        #sk-footer { background: #cccccc !important; color: #333333 !important; }
+    body[data-stil="robogeddon"] #sk-footer { background: #dddddd !important; color:    gray !important; }
+    body[data-stil="talente"]    #sk-footer { background: #f7f7f7 !important; color: #333333 !important; }
+    body[data-stil="nacht"]      #sk-footer { background: #333333 !important; color:   white !important; }
+    body[data-stil="hacks"]      #sk-footer { background: #000000 !important; color:   white !important; }
+    
+ /* Eingaben */
+    body[data-stil="tag"]        #sk-footer .message-input, body[data-stil="tag"]        .befehle > div { background-color: #ffffff !important; color:   gray !important; border: #ffffff 1px solid; } body[data-stil="tag"]        #sk-footer .send.active { color:  gray !important; }
+    body[data-stil="robogeddon"] #sk-footer .message-input, body[data-stil="robogeddon"] .befehle > div { background-color: #ffffff !important; color:  black !important; border: #ffffff 1px solid; } body[data-stil="robogeddon"] #sk-footer .send.active { color: black !important; }
+    body[data-stil="talente"]    #sk-footer .message-input, body[data-stil="talente"]    .befehle > div { background-color: #ffffff !important; color:  black !important; border: #ffffff 1px solid; } body[data-stil="talente"]    #sk-footer .send.active { color: black !important; }
+    body[data-stil="nacht"]      #sk-footer .message-input, body[data-stil="nacht"]      .befehle > div { background-color: #666666 !important; color: silver !important; border: #666666 1px solid; } body[data-stil="nacht"]      #sk-footer .send.active { color: white !important; }
+    body[data-stil="hacks"]      #sk-footer .message-input, body[data-stil="hacks"]      .befehle > div { background-color: #000000 !important; color: silver !important; border: #111111 1px solid; } body[data-stil="hacks"]      #sk-footer .send.active { color: white !important; }
+    
+ /* Befehler-Farbe */
+    body[data-stil="tag"]        .befehler { background-color: #00aeff !important; color:   white; }
+    body[data-stil="robogeddon"] .befehler { background-color: #00aeff !important; color:   white; }
+    body[data-stil="talente"]    .befehler { background-color: #cccccc !important; color:   black; }
+    body[data-stil="nacht"]      .befehler { background-color: #00aeff !important; color:   black; }
+    body[data-stil="hacks"]      .befehler { background-color: #00ff00 !important; color:   black; }
+    
+ /* Befehler-Button */
+    body[data-stil="tag"]        #befehlleiste input { background-color: #cccccc !important; color: #ffffff; }
+    body[data-stil="robogeddon"] #befehlleiste input { background-color: #dddddd !important; color: #ffffff; }
+    body[data-stil="talente"]    #befehlleiste input { background-color: #dddddd !important; color: #333333; }
+    body[data-stil="nacht"]      #befehlleiste input { background-color: #333333 !important; color: #666666; }
+    body[data-stil="hacks"]      #befehlleiste input { background-color: #000000 !important; color: #000000; }
+    
+ /* Befehler-Button aktiv */
+    body[data-stil="tag"]        #befehlleiste input.aktiv { background-color: #00aeff !important; color:   white; }
+    body[data-stil="robogeddon"] #befehlleiste input.aktiv { background-color: #00aeff !important; color:   white; }
+    body[data-stil="talente"]    #befehlleiste input.aktiv { background-color: #cccccc !important; color:   black; }
+    body[data-stil="nacht"]      #befehlleiste input.aktiv { background-color: #00aeff !important; color:   black; }
+    body[data-stil="hacks"]      #befehlleiste input.aktiv { background-color: #00ff00 !important; color:   black; }
+    

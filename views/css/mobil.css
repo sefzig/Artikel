@@ -1,0 +1,73 @@
+    
+ /* Hintergrund */
+    body:not([data-mobil=""]) #hintergrund { 
+       display: none;
+    }
+    body:not([data-mobil=""]) #menu { 
+       display: none;
+       bottom: -20px;
+    }
+    body:not([data-mobil=""]) #seite > #chat {
+    /* bottom: -20px !important; */
+    }
+    
+ /* Nur/Nicht Mobil */
+    .nur_mobil,
+    body:not([data-mobil=""]) .nicht_mobil {
+       display: none;
+    }
+    body:not([data-mobil=""]) .nur_mobil {
+       display: inline;
+    }
+    
+ /* Anpassungen Absender */
+    body:not([data-mobil=""]) .sk-left-row {
+       position: relative;
+       margin-top: 5px;
+       margin-left: 37px;
+    }
+    body:not([data-mobil=""]) .sk-right-row {
+       margin-top: 5px;
+    }
+    body:not([data-mobil=""]) .sk-left-row .roboter {
+       position: relative;
+    }
+    body:not([data-mobil=""]) .sk-left-row .sk-msg-avatar {
+       position: absolute;
+       top: -9px;
+       left: -45px;
+    }
+    body:not([data-mobil=""]) .sk-left-row .sk-from {
+       top: -10px;
+       left: 0px;
+       margin-left: 0px !important;
+    }
+    
+    body:not([data-mobil=""]) .sk-logo {
+       margin-left: auto !important;
+       margin-right: auto !important;
+    }
+    
+    body:not([data-mobil=""]) #datenFormular {
+    	position: absolute;
+    	right: 0px;
+    	bottom: 50px;
+    	left: 0px;
+    }
+    
+    body:not([data-mobil=""]) #befehlleiste > input {
+      padding-left: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-right: 0px;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -webkit-appearance: none;
+    }
+    
+    body:not([data-mobil=""]) .sk-msg-avatar-placeholder {
+       display: none !important;
+    }
+    
