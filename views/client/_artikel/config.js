@@ -97,7 +97,7 @@
        	 
        // Benutzeroberfläche
           "headerText": "Chatraum des Artikels über Chatbots",
-          "startText": "Dies ist der Anfang unseres Gesprächs.<br>&nbsp;",
+          "startText": "&nbsp;<br>&nbsp;",
           "inputPlaceholder": "Schreiben Sie eine Nachricht...",
           "sendButtonText": "Absenden",
           
