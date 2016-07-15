@@ -56,7 +56,7 @@
              
              if (bekannt == false) {
                 
-                                return bot.say(EmpfangsBot+' Solange Andreas nicht da ist, geben Sie mir angesagte Stichwörter wie --ConversationalUI, --ConvCom oder --KünstlicheIntelligenz! ').then(() => 'empfang');                 
+                                return bot.say(EmpfangsBot+' Solange Andreas noch nicht da ist, geben Sie mir angesagte Stichwörter wie --ConversationalUI, --RTM, --ConvComm oder --KünstlicheIntelligenz! ').then(() => 'empfang');                 
              }
              else {
                 
@@ -248,7 +248,7 @@
        // -----------------
        
           if ((~befehl.indexOf("--BEFEHL")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Funktionen: --Kontakt, --Inhalt, --Mobil und --Über. ').then(() => 'empfang');}          
-          if ((~befehl.indexOf("--CONVCOM")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' #ConvCom ist der kurze Hashtag für “Conversational Commerce”. Der Begriff wurde erstmals im Januar 2016 von Chris Messina (Ex-Google-Stratege, Erfinder des Hashtags, Developer Experience lead bei Uber) in seinem vielbeachteten Artikel “2016 will be the year of conversational commerce” eingeführt: [Button:Artikel auf Medium,https://medium.com/chris-messina/2016-will-be-the-year-of-conversational-commerce-1586e85e3991] ').then(() => 'empfang');}          
+          if ((~befehl.indexOf("--CONVCOM")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' #ConvComm ist die Kurzversion des Hashtags “#ConversationalCommerce”. Der Begriff wurde erstmals im Januar 2016 von Chris Messina (Ex-Google-Stratege, Erfinder des Hashtags, Developer Experience Lead bei Uber) in seinem vielbeachteten Artikel “2016 will be the year of conversational commerce” eingeführt: [Button:Artikel auf Medium öffnen,https://medium.com/chris-messina/2016-will-be-the-year-of-conversational-commerce-1586e85e3991] ').then(() => 'empfang');}          
        // -----------------
        // Inhalte
        // -----------------
