@@ -261,7 +261,7 @@
                 
              }
              
-             console.log("Parameter gut: "+getParameters("gut"));
+             console.log("Parameter gut: '"+getParameters("gut")+"'");
              
              var gut =      getParameters("gut");      if ((gut)      && (gut      != "") && (gut      != " ")) { window.setTimeout(function() {  Smooch.sendMessage(" Finde ich gut: "      +decodeURIComponent(getParameters("schlecht"))+" "); }, 1000); }
              var schlecht = getParameters("schlecht"); if ((schlecht) && (schlecht != "") && (schlecht != " ")) { window.setTimeout(function() {  Smooch.sendMessage(" Finde ich nicht gut: "+decodeURIComponent(getParameters("gut"))     +" "); }, 1000); }
