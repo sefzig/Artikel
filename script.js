@@ -56,7 +56,7 @@
              
              if (bekannt == false) {
                 
-                                return bot.say(EmpfangsBot+' Solange Andreas noch nicht da ist, geben Sie mir angesagte Stichwörter wie #--ConvComm, #--RTM, #--ConversationalUI oder #--KünstlicheIntelligenz! ').then(() => 'empfang');                 
+                                return bot.say(EmpfangsBot+' Solange Andreas noch nicht da ist, geben Sie mir angesagte Stichwörter wie --ConvComm, --RTM, --ConversationalUI oder --KünstlicheIntelligenz! ').then(() => 'empfang');                 
              }
              else {
                 

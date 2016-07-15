@@ -716,7 +716,7 @@
        // Bots anpassen
           var text_merken = text_neu;
           text_neu = inhalt("bot", text_neu, "AndreasSefzig",  "Andreas Sefzig",         zufall, "Sefzig");
-          text_neu = inhalt("bot", text_neu, "EmpfangsBot",    "Andreas Sefzigs Bot",    zufall, "Empfang");
+          text_neu = inhalt("bot", text_neu, "EmpfangsBot",    "SefzigBot",              zufall, "Empfang");
           
        // Chatraum
        // text_neu = inhalt("bot", text_neu, "SefzigBot",      "Andreas Sefzigs Bot",    zufall, "Sefzig");
