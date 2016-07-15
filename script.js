@@ -10,7 +10,7 @@
    const MarketingBot = "[MarketingBot] "; 
 
 // Variablen 
-   var versuche_max = 3; 
+   var versuche_max = 999; 
    var versuche = 0; 
    var zuletzt = ""; 
    var bekannt = false;
@@ -56,7 +56,7 @@
              
              if (bekannt == false) {
                 
-                                return bot.say(EmpfangsBot+' Wenn Andreas  nicht da ist, geben Sie mir angesagte Stichwörter wie --ConversationalUI, --ConvCom oder --KI! ').then(() => 'empfang');                 
+                                return bot.say(EmpfangsBot+' Wenn Andreas  nicht da ist, geben Sie mir angesagte Stichwörter wie --ConversationalUI, --ConvCom oder --KünstlicheIntelligenz! ').then(() => 'empfang');                 
              }
              else {
                 
