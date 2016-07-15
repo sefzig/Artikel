@@ -261,11 +261,15 @@
                 
              }
              
-             console.log("Parameter gut: '"+getParameters("gut")+"'");
+             var gut =      decodeURIComponent(getParameters("gut"));      
+             var schlecht = decodeURIComponent(getParameters("schlecht")); 
+             var neutral =  decodeURIComponent(getParameters("neutral"));  
              
-             var gut =      getParameters("gut");      if ((gut)      && (gut      != "") && (gut      != " ")) { window.setTimeout(function() {  Smooch.sendMessage(" Finde ich gut: "      +decodeURIComponent(getParameters("schlecht"))+" "); }, 1000); }
-             var schlecht = getParameters("schlecht"); if ((schlecht) && (schlecht != "") && (schlecht != " ")) { window.setTimeout(function() {  Smooch.sendMessage(" Finde ich nicht gut: "+decodeURIComponent(getParameters("gut"))     +" "); }, 1000); }
-             var neutral =  getParameters("neutral");  if ((neutral)  && (neutral  != "") && (neutral  != " ")) { window.setTimeout(function() {  Smooch.sendMessage(                     " "+decodeURIComponent(getParameters("neutral")) +" "); }, 1000); }
+             console.log("Parameter gut: '"+gut+"'");
+             
+             if ((gut)      && (gut      != "") && (gut      != " ")) { window.setTimeout(function() {  Smooch.sendMessage(" Finde ich gut: "      +gut);       }, 1000); }
+             if ((schlecht) && (schlecht != "") && (schlecht != " ")) { window.setTimeout(function() {  Smooch.sendMessage(" Finde ich nicht gut: "+schlecht) ; }, 1000); }
+             if ((neutral)  && (neutral  != "") && (neutral  != " ")) { window.setTimeout(function() {  Smooch.sendMessage(                     " "+neutral);   }, 1000); }
              
           }, 333); }); // Addon nach 22.06.16, vorher 100
           
