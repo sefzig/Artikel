@@ -261,9 +261,9 @@
                 
              }
              
-             var gut =      getParameters("gut");      if ((gut)      && (gut      != "")) { window.setTimeout(function() {  Smooch.sendMessage(" Finde ich nicht gut: "+schlecht+" "); }, 1000); }
-             var schlecht = getParameters("schlecht"); if ((schlecht) && (schlecht != "")) { window.setTimeout(function() {  Smooch.sendMessage(" Finde ich       gut: "+gut     +" "); }, 1000); }
-             var neutral =  getParameters("neutral");  if ((neutral)  && (neutral  != "")) { window.setTimeout(function() {  Smooch.sendMessage(" Text:                "+neutral +" "); }, 1000); }
+             var gut =      getParameters("gut");      if ((gut)      && (gut      != "")) { window.setTimeout(function() {  Smooch.sendMessage(" Finde ich       gut: "+schlecht+" "); }, 1000); }
+             var schlecht = getParameters("schlecht"); if ((schlecht) && (schlecht != "")) { window.setTimeout(function() {  Smooch.sendMessage(" Finde ich nicht gut: "+gut     +" "); }, 1000); }
+             var neutral =  getParameters("neutral");  if ((neutral)  && (neutral  != "")) { window.setTimeout(function() {  Smooch.sendMessage("                      "+neutral +" "); }, 1000); }
              
           }, 333); }); // Addon nach 22.06.16, vorher 100
           
