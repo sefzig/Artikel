@@ -249,7 +249,7 @@
                    
                    nachricht = texte["chat"]["weiterleiten"]; 
                    nachricht = nachricht+"  "; 
-                   Smooch.sendMessage(" "+nachricht+" "); 
+                // Smooch.sendMessage(" "+nachricht+" "); 
                    
                    window.setTimeout(function() { 
                       
