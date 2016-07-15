@@ -56,7 +56,7 @@
              
              if (bekannt == false) {
                 
-                                return bot.say(EmpfangsBot+' Wenn Andreas  nicht da ist, geben Sie mir angesagte Stichwörter wie --ConversationalUI, --ConvCom oder --KünstlicheIntelligenz! ').then(() => 'empfang');                 
+                                return bot.say(EmpfangsBot+' Solange Andreas nicht da ist, geben Sie mir angesagte Stichwörter wie --ConversationalUI, --ConvCom oder --KünstlicheIntelligenz! ').then(() => 'empfang');                 
              }
              else {
                 
@@ -228,50 +228,10 @@
           }
           
        // -----------------
-       // Befehle
-       // -----------------
-          
-          if ("empfang" != "empfang") {
-          	 
-             if ((~befehl.indexOf("--EMPFANG")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Bis später! ').then(() => bot.say(EmpfangsBot+' Willkommen zurück! Wie war es im --Empfang? Schreiben Sie --Befehle um zu sehen, was ich Ihnen sonst noch zeigen kann. ')).then(() => 'empfang');}if ((~befehl.indexOf("--SEFZIGBOT")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Bis später! ').then(() => bot.say(EmpfangsBot+' Willkommen zurück! Wie war es im --Empfang? Schreiben Sie --Befehle um zu sehen, was ich Ihnen sonst noch zeigen kann. ')).then(() => 'empfang');}if ((~befehl.indexOf("--ABBRECHEN")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Bis später! ').then(() => bot.say(EmpfangsBot+' Willkommen zurück! Wie war es im --Empfang? Schreiben Sie --Befehle um zu sehen, was ich Ihnen sonst noch zeigen kann. ')).then(() => 'empfang');}             
-          }
-          
-          if (zuletzt_kamel != "Empfang") { 
-             
-             if ((~befehl.indexOf("--ZURÜCK")) && (botsan == true)) { versuch = true; }             
-          } 
-          else {
-             
-             if ((~befehl.indexOf("--ZURÜCK")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Wollen Sie zurück zum --Empfang? ').then(() => 'empfang');}             
-          }
-          
-          if ((~befehl.indexOf("--MENÜAN")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:menu(an)] Menü eingeschaltet. ').then(() => 'empfang');}if ((~befehl.indexOf("--MENUAN")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:menu(an)] Menü eingeschaltet. ').then(() => 'empfang');}          if ((~befehl.indexOf("--MENÜAUS")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:menu(aus)] Menü ausgeschaltet. ').then(() => 'empfang');}if ((~befehl.indexOf("--MENUAUS")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:menu(aus)] Menü ausgeschaltet. ').then(() => 'empfang');}          if ((~befehl.indexOf("--MENÜ")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:menu()] Menü umgeschaltet. ').then(() => 'empfang');}if ((~befehl.indexOf("--MENU")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:menu()] Menü umgeschaltet. ').then(() => 'empfang');}if ((~befehl.indexOf("--MENUE")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:menu()] Menü umgeschaltet. ').then(() => 'empfang');}          
-       // -----------------
-       // Onboarding
-       // -----------------
-          
-       	 if ((vorname) && (vorname != "") && (vorname != "Unbekannter") && (nachname) && (nachname != "") && (nachname != "Besucher")) {
-       	    
-             if ((~befehl.indexOf("--NAME")) && (botsan == true)) { versuch = true; }             
-          }
-          else if ((vorname) && (vorname != "") && (vorname != "Unbekannter")) {
-       	    
-             if ((~befehl.indexOf("--NAME")) && (botsan == true)) { versuch = true; }             
-          }
-          else if ((nachname) && (nachname != "") && (nachname != "Besucher")) {
-       	    
-             if ((~befehl.indexOf("--NAME")) && (botsan == true)) { versuch = true; }             
-          }
-          else {
-       	    
-             if ((~befehl.indexOf("--NAME")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Wir kennen Ihren Namen noch nicht. ').then(() => 'vorname');}             
-          }
-          
-       // -----------------
        // Kontakt
        // -----------------
           
-          if ((~befehl.indexOf("--KONTAKT")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Alle unsere Kontaktwege: [Text:Kontakt,RobogeddonKontakt] ').then(() => bot.say(EmpfangsBot+' Wollen Sie --telefonieren, --mailen oder --twittern? ')).then(() => 'empfang');}          
+          if ((~befehl.indexOf("--KONTAKT")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Wollen Sie --telefonieren, --mailen oder --twittern? ').then(() => 'empfang');}          
           if ((~befehl.indexOf("--TELEFON")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Rufen Sie Andreas Sefzig an: [Telefon:+49 151 15920082] ').then(() => 'empfang');}          
           if ((~befehl.indexOf("--MAIL")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Schreiben Sie uns eine Email: [Email:andreas.sefzig@robogeddon.de] ').then(() => 'empfang');}          
           if ((~befehl.indexOf("--TWITTER")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Senden Sie uns einen Tweet: [Link:PM in Twitter öffnen,RobogeddonTweet] ').then(() => 'empfang');}          
@@ -279,25 +239,16 @@
        // Funktionen
        // -----------------
           
-          if ((~befehl.indexOf("--MOBIL")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Diesen Chat mobil öffnen: [Qr:http://chatraum.herokuapp.com/] ').then(() => bot.say(EmpfangsBot+' Oder öffnen Sie [Textlink:Chatraum.herokuapp.com,http://chatraum.herokuapp.com] in Ihrem mobilen Browser. ')).then(() => 'empfang');}          
+          if ((~befehl.indexOf("--MOBIL")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Diesen Chat mobil öffnen: [Qr:http://artikel.herokuapp.com/] ').then(() => 'empfang');}          
+          if ((~befehl.indexOf("--MENÜAN")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:menu(an)] Menü eingeschaltet. ').then(() => 'empfang');}if ((~befehl.indexOf("--MENUAN")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:menu(an)] Menü eingeschaltet. ').then(() => 'empfang');}          if ((~befehl.indexOf("--MENÜAUS")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:menu(aus)] Menü ausgeschaltet. ').then(() => 'empfang');}if ((~befehl.indexOf("--MENUAUS")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:menu(aus)] Menü ausgeschaltet. ').then(() => 'empfang');}          if ((~befehl.indexOf("--MENÜ")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:menu()] Menü umgeschaltet. ').then(() => 'empfang');}if ((~befehl.indexOf("--MENU")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:menu()] Menü umgeschaltet. ').then(() => 'empfang');}if ((~befehl.indexOf("--MENUE")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:menu()] Menü umgeschaltet. ').then(() => 'empfang');}          
        // Stile
           if ((~befehl.indexOf("--TAG")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:stil(tag)] Stil: Tag. ').then(() => 'empfang');}          if ((~befehl.indexOf("--NACHT")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:stil(nacht)] Stil: Nacht. ').then(() => 'empfang');}          if ((~befehl.indexOf("--ROBOS")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:stil(robogeddon)] Stil: Robogeddon. ').then(() => 'empfang');}          if ((~befehl.indexOf("--HX")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' [Javascript:stil(hacks)] Stil: Hx. ').then(() => 'empfang');}          
-       // -----------------
-       // Bots
-       // -----------------
-          
-          if (zuletzt_klein != "empfang") { 
-             if ((~befehl.indexOf("--EMPFANG")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Ich übergebe an Alice. Schreiben Sie --Empfang, um wieder mit mir zu sprechen. ').then(() => bot.say(EmpfangsBot+' Hallo, ich bin Alice, der Empfangs-Bot. Darf ich Ihnen die Bots aus --Verkauf und --Marketing vorstellen? ')).then(() => 'empfang');}if ((~befehl.indexOf("--ALICE")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Ich übergebe an Alice. Schreiben Sie --Empfang, um wieder mit mir zu sprechen. ').then(() => bot.say(EmpfangsBot+' Hallo, ich bin Alice, der Empfangs-Bot. Darf ich Ihnen die Bots aus --Verkauf und --Marketing vorstellen? ')).then(() => 'empfang');} } else { 
-             if ((~befehl.indexOf("--EMPFANG")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Sprechen Sie mit mir über den --Chatraum - oder mit den anderen Bots über --Verkauf oder --Marketing! ').then(() => 'empfang');}if ((~befehl.indexOf("--ALICE")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Sprechen Sie mit mir über den --Chatraum - oder mit den anderen Bots über --Verkauf oder --Marketing! ').then(() => 'empfang');}          }
-          
-       // Vorlage (Gewerk, Name)
-          if ((~befehl.indexOf("--GEWERK")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Ich übergebe an Name. Schreiben Sie --Empfang, um wieder mit mir zu sprechen. ').then(() => bot.say(GewerksBot+' Hallo Gewerk Text 1: Hallo, ich bin Name, der Gewerks-Bot. ')).then(() => bot.say(GewerksBot+' Hallo Gewerk Text 2: --Befehle folgt. ')).then(() => bot.say(GewerksBot+' Hallo Gewerk Text 3. ')).then(() => 'gewerk');}
        // -----------------
        // System
        // -----------------
        
           if ((~befehl.indexOf("--BEFEHL")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Funktionen: --Kontakt, --Inhalt, --Mobil und --Über. ').then(() => 'empfang');}          
-          if ((~befehl.indexOf("--ÜBER")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' Ich bin Andreas Sefzigs Bot. Soll ich Andreas --Sefzig rufen? ').then(() => bot.say(EmpfangsBot+' Geben Sie mir Stichwörter wie --ConversationalUI, --ConvComm oder --Künstliche Intelligenz - ich habe zu vielem eine Meinung :D ')).then(() => 'empfang');}          
+          if ((~befehl.indexOf("--CONVCOM")) && (botsan == true)) { versuch = true; return bot.say(EmpfangsBot+' #ConvCom ist der kurze Hashtag für “Conversational Commerce”. Der Begriff wurde erstmals im Januar 2016 von Chris Messina (Ex-Google-Stratege, Erfinder des Hashtags, Developer Experience lead bei Uber) in seinem vielbeachteten Artikel “2016 will be the year of conversational commerce” eingeführt: [Button:Artikel auf Medium,https://medium.com/chris-messina/2016-will-be-the-year-of-conversational-commerce-1586e85e3991] ').then(() => 'empfang');}          
        // -----------------
        // Inhalte
        // -----------------
